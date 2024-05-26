@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <div className="container">
         <header className="App-header">
-          Hello world{" "}
+          Find your meaning{" "}
           <img src={earth} className="App-logo img-fluid" alt="earth" />
         </header>
         <main>
