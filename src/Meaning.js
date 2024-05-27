@@ -5,12 +5,20 @@ export default function Meaning({ meaning }) {
     <div className="Meaning">
       <h3>{meaning.partOfSpeech}</h3>
       <div>
-        <span className="Definition">Definition: </span>
+        <span className="Definition">
+          <strong>Definition:</strong>{" "}
+        </span>
         {meaning.definition}
         <br />
-        {meaning.example && <em>Example: {meaning.example}</em>}
+        {meaning.example && (
+          <div>
+            <strong>Example:</strong> <em>{meaning.example}</em>
+          </div>
+        )}
         {meaning.synonyms && meaning.synonyms.length > 0 && (
-          <p>Synonyms: {meaning.synonyms.join(", ")}</p>
+          <p>
+            <strong>Synonyms:</strong> {meaning.synonyms.join(", ")}
+          </p>
         )}
       </div>
     </div>

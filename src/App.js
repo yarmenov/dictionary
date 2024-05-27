@@ -8,7 +8,8 @@ function App() {
     <div className="App">
       <div className="container">
         <header className="App-header">
-          Find your meaning{" "}
+          <span className="heading">Find your meaning</span> <br />
+          <br />
           <img src={earth} className="App-logo img-fluid" alt="earth" />
         </header>
         <main>
