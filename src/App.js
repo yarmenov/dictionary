@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <div className="container">
         <header className="App-header">
+          <h1>Online Dictionary</h1>
           <span className="heading">Find your meaning</span> <br />
           <br />
           <img src={earth} className="App-logo img-fluid" alt="earth" />

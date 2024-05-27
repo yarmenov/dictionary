@@ -11,7 +11,7 @@ export default function Results(props) {
 
         <section>
           <p className="phonetics">
-            <strong>Phonetics:</strong>{" "}
+            <strong>phonetics:</strong>{" "}
             <span classname="text">/{props.results.phonetic}/</span>
           </p>
         </section>

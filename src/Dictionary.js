@@ -25,6 +25,7 @@ export default function Dictionary() {
           <input
             type="search"
             autoFocus={true}
+            placeholder="Search for a word"
             onChange={handleKeywordChange}
           />
         </form>

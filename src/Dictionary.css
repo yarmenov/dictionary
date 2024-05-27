@@ -1,15 +1,17 @@
 .Dictionary {
   text-align: center;
+  font-family: "Inter", sans-serif !important;
 }
 .Dictionary section {
-  background: white;
+  background: #eeeeee;
   padding: 30px;
-  margin: 20px 0;
+  margin: 10px auto;
   box-shadow: 0 10px 10px rgb(0 0 0 /10%);
   border-radius: 6px;
+  max-width: 70%;
 }
 .Dictionary input {
-  width: 100%;
+  width: 70%;
   border-radius: 6px;
   padding: 6px 10px;
   color: #333;
