@@ -8,12 +8,16 @@ export default function Photos(props) {
         <div className="row">
           {props.photos.map(function (photo, index) {
             return (
-              <div className="col-4" key={index}>
-                <a href={photo.src.original} target="_blank" rel="noreferrer">
+              <div className="col-1" key={index}>
+                <a
+                  href={photo.src.original}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
                     src={photo.src.landscape}
-                    alt={photo.alt}
                     className="img-fluid"
+                    alt={photo.alt}
                   />
                 </a>
               </div>
@@ -22,5 +26,7 @@ export default function Photos(props) {
         </div>
       </section>
     );
+  } else {
+    return null;
   }
 }

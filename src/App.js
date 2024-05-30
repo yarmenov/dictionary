@@ -1,25 +1,12 @@
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.css";
-import earth from "./earth.png";
 import Dictionary from "./Dictionary";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <div className="container">
-        <header className="App-header">
-          <h1>Online Dictionary</h1>
-          <span className="heading">Find your meaning</span> <br />
-          <br />
-          <img src={earth} className="App-logo img-fluid" alt="earth" />
-        </header>
-        <main>
-          <Dictionary />
-        </main>
-        <footer className="App-footer">Coded by Yana</footer>
-      </div>
+      <header className="App">
+        <Dictionary defaultWord="sunrise" />
+      </header>
     </div>
   );
 }
-
-export default App;
